@@ -5,7 +5,7 @@ namespace PPKicks {
 		public App() {
 			InitializeComponent();
 
-			MainPage = new TabbedNavigationPage();
+			MainPage = new NavigationPage(new TabbedNavigationPage());
 		}
 
 		protected override void OnStart() {
