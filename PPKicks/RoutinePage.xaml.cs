@@ -8,5 +8,10 @@ namespace PPKicks {
 		public RoutinePage() {
 			InitializeComponent();
 		}
+
+		async void OnItemTapped(object Sender, ItemTappedEventArgs e) {
+			Exercise tappedExercise = (Exercise)e.Item;
+			await Navigation.PushAsync(new ExerciseDetails(tappedExercise));
+		}
 	}
 }

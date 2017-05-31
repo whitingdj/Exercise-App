@@ -10,6 +10,7 @@
 
     <ListView x:Name="allExercises" 
         ItemsSource="{Binding}"
-        SeparatorVisibility="Default" />
+        ItemTapped="OnItemTapped"
+        SeparatorVisibility="None" />
     
 </ContentPage>
