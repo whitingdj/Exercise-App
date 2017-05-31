@@ -48,6 +48,7 @@
     <EmbeddedResource Include="ExerciseDetails.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Images\squat.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -92,7 +93,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Images\squat.png" />
     <None Include="Images\stretch.png" />
   </ItemGroup>
   <ItemGroup>

@@ -20,7 +20,7 @@ namespace PPKicks {
 				new Exercise {
 					Name="Pistol Squat",
 					ExerciseSnapshot = "squat.png",
-					IsFavorite=true
+					IsFavorite=false
 				},
 			};
 		}

@@ -8,9 +8,13 @@
     BindingContext="{x:Static local:ExerciseFactory.Exercises}"
     Padding="5,20,5,5">
 
+    <ContentPage.Content>
+
     <ListView x:Name="allExercises" 
         ItemsSource="{Binding}"
         ItemTapped="OnItemTapped"
         SeparatorVisibility="None" />
+        
+    </ContentPage.Content>
     
 </ContentPage>
