@@ -16,6 +16,13 @@ namespace PPKicks {
 			set { SetProperty(ref name, value); }
 		}
 
+		string description;
+		public string Description {
+			get { return description; }
+			set { SetProperty(ref description, value); }
+		}
+
+
 		bool isFavorite;
 		public bool IsFavorite {
 			get { return isFavorite; }

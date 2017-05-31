@@ -23,6 +23,8 @@
             <Label Text="Name" FontAttributes="Bold" />
             <Entry Text="{Binding Name, Mode=TwoWay}" />
 
+            <Label Text="Description" FontAttributes="Bold" />
+            <Entry Text="{Binding Description, Mode=TwoWay}" />
 
             <Label Text="Favorite" FontAttributes="Bold" />
             <Switch IsToggled="{Binding IsFavorite, Mode=TwoWay}" />
