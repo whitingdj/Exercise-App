@@ -13,6 +13,7 @@ namespace PPKicks {
 			Exercises = new ObservableCollection<Exercise>{
 				new Exercise {
 					Name="Crunches",
+					Focus="Great for Core Strength",
 					ExerciseSnapshot = "crunch.png",
 					Description= "Crunch them abs, guuuuuurl",
 					IsFavorite=false
@@ -20,6 +21,7 @@ namespace PPKicks {
 
 				new Exercise {
 					Name="Pistol Squat",
+					Focus="Great for Quad Strength",
 					ExerciseSnapshot = "squat.png",
 					Description= "Squat them leeeeggggs, guuuuuurl",
 					IsFavorite=false
@@ -27,6 +29,7 @@ namespace PPKicks {
 
 				new Exercise {
 					Name="Deadlifts",
+					Focus="Solid for tight hammies",
 					ExerciseSnapshot = "deadlift.png",
 					Description= "Neutral spine, slight bend in the knee, booty pop, guuuuuurl",
 					IsFavorite=false

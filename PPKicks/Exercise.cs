@@ -16,6 +16,12 @@ namespace PPKicks {
 			set { SetProperty(ref name, value); }
 		}
 
+		string focus;
+		public string Focus {
+			get { return focus; }
+			set { SetProperty(ref focus, value); }
+		}
+
 		string description;
 		public string Description {
 			get { return description; }
