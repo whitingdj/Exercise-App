@@ -12,6 +12,8 @@ namespace PPKicks.iOS {
 			global::Xamarin.Forms.Forms.Init();
 
 			LoadApplication(new App());
+			UITabBar.Appearance.SelectedImageTintColor = UIColor.FromRGB(118, 53, 235);
+
 
 			return base.FinishedLaunching(app, options);
 		}

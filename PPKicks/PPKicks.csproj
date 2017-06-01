@@ -42,15 +42,15 @@
     <EmbeddedResource Include="AccountPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="SettingsPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="ExerciseDetails.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\squat.png" />
     <EmbeddedResource Include="Images\crunch.png" />
     <EmbeddedResource Include="Images\deadlift.png" />
+    <EmbeddedResource Include="KicklistPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -72,15 +72,15 @@
     <Compile Include="AccountPage.xaml.cs">
       <DependentUpon>AccountPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SettingsPage.xaml.cs">
-      <DependentUpon>SettingsPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Exercise.cs" />
     <Compile Include="ExerciseFactory.cs" />
     <Compile Include="ExerciseDetails.xaml.cs">
       <DependentUpon>ExerciseDetails.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\ImageResourceConverter.cs" />
+    <Compile Include="KicklistPage.xaml.cs">
+      <DependentUpon>KicklistPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

@@ -4,12 +4,13 @@
 	xmlns:local="clr-namespace:PPKicks;assembly=PPKicks"
 	x:Class="PPKicks.TabbedNavigationPage">
 
-	<NavigationPage x:Name="MyNavigationPage" Title="Home" Icon="Home.png">
+	<NavigationPage x:Name="MyNavigationPage" Title="Home" Icon="New.png">
 		<x:Arguments>
 			<local:HomePage />
 		</x:Arguments>
 	</NavigationPage>
 	<local:RoutinePage />
+    <local:KicklistPage />
 	<local:AccountPage />
-	<local:SettingsPage />
+
 </TabbedPage>
