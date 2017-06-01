@@ -20,11 +20,14 @@
             <Image HeightRequest="200" Aspect="AspectFit"
                    Source="{Binding ExerciseSnapshot, Converter={StaticResource imageResourceCvt}}" />
 
-            <Label Text="Name" FontAttributes="Bold" />
-            <Entry Text="{Binding Name, Mode=TwoWay}" />
+            <Label Text="{Binding Name, Mode=TwoWay}" 
+                 FontAttributes="Bold" 
+                 FontSize="35"
+                 HorizontalTextAlignment="Center"/>
 
             <Label Text="Description" FontAttributes="Bold" />
-            <Entry Text="{Binding Description, Mode=TwoWay}" />
+            <Label Text="{Binding Description, Mode=TwoWay}" 
+                LineBreakMode="WordWrap"/>
 
             <Label Text="Favorite" FontAttributes="Bold" />
             <Switch IsToggled="{Binding IsFavorite, Mode=TwoWay}" />
