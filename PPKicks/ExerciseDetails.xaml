@@ -18,12 +18,12 @@
             </StackLayout.Padding>
 
             <Image HeightRequest="200" Aspect="AspectFit"
-                   Source="{Binding ExerciseSnapshot, Converter={StaticResource imageResourceCvt}}" />
+                Source="{Binding ExerciseSnapshot, Converter={StaticResource imageResourceCvt}}" />
 
             <Label Text="{Binding Name, Mode=TwoWay}" 
-                 FontAttributes="Bold" 
-                 FontSize="35"
-                 HorizontalTextAlignment="Center"/>
+                FontAttributes="Bold" 
+                FontSize="35"
+                HorizontalTextAlignment="Center"/>
 
             <Label Text="Description" FontAttributes="Bold" />
             <Label Text="{Binding Description, Mode=TwoWay}" 

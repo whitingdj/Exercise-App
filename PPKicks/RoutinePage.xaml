@@ -8,13 +8,30 @@
     BindingContext="{x:Static local:ExerciseFactory.Exercises}"
     Padding="5,20,5,5">
 
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ImageResourceConverter x:Key="imageResourceCvt" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <ContentPage.Content>
 
-    <ListView x:Name="allExercises" 
-        ItemsSource="{Binding}"
-        ItemTapped="OnItemTapped"
-        SeparatorVisibility="None" />
-        
+        <ListView x:Name="allExercises" 
+            ItemsSource="{Binding}"
+            ItemTapped="OnItemTapped"
+            SeparatorVisibility="None"
+            IsPullToRefreshEnabled="true"
+            Refreshing="OnRefreshing">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell Text="{Binding Name}" 
+                               Detail="{Binding Description}" 
+                               DetailColor="Gray"
+                               ImageSource="{Binding ExerciseSnapshot, Converter={StaticResource imageResourceCvt}}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
     </ContentPage.Content>
-    
+
 </ContentPage>
